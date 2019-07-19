@@ -1,11 +1,11 @@
 s=input()
 s=s.lower()
 s=list(s)
-for i in s:
-    if i.isdigit()==True:
-        i=int(i)
+for i in range(0,len(s)):
+    if s[i].isdigit()==True:
+        s[i]=int(s[i])
     else:
-        i=int(ord(i))-87
+        s[i]=int(ord(s[i]))-87
 
 b=int(max(s))+1
 
